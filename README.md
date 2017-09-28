@@ -1,25 +1,49 @@
-# Static Website Template
-This is a static website built with Node JS.
+# Test Github Repo
+This is an example github repository.
 
-## Install
+## Git Commands
 
-### Requirements
-This project will require git, node and npm all be installed on your system.
-
-### Clone Project
-Clone the project by entering the following command into your terminal:
+### Initialize Repository
 ```
-git clone https://github.com/codehesion/template-static.git
+git init
 ```
 
-### Install Node Modules
-Change directory into your cloned project and install the npm modules required:
+### Add Remote
 ```
-cd template-static && npm install
+git remote add <remotename> https://github.com/<username>/<reponame>.git
 ```
 
-### Run Locally
-Start the local web server:
+### List Remotes
 ```
-clear && node server
+git remote -v
+```
+
+### Remove Remote
+```
+git remote remove <remotename>
+```
+
+### Commit Status
+```
+git status
+```
+
+### Add All Files To Commit
+```
+git add -A
+```
+
+### Add Single File To Commit
+```
+git add <filepath>
+```
+
+### Commit
+```
+git commit -m "my commit message"
+```
+
+### Push
+```
+git push <remotename> master
 ```
